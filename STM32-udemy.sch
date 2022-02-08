@@ -604,15 +604,184 @@ Wire Wire Line
 Connection ~ 3950 3250
 Wire Wire Line
 	3950 3250 3850 3250
+Text Label 6500 3150 0    50   ~ 0
+USB_D-
+Text Label 6500 3250 0    50   ~ 0
+USB_D+
+Text Label 6150 3350 0    50   ~ 0
+SWDIO
+Text Label 6150 3450 0    50   ~ 0
+SWCLK
+Text Label 6500 2950 0    50   ~ 0
+VBUS
+Text Label 6500 3050 0    50   ~ 0
+USB_ID
 $Comp
 L Connector:USB_B_Micro J?
 U 1 1 62056208
-P 7850 3550
-F 0 "J?" H 7620 3539 50  0000 R CNN
-F 1 "USB_B_Micro" H 7620 3448 50  0000 R CNN
-F 2 "" H 8000 3500 50  0001 C CNN
-F 3 "~" H 8000 3500 50  0001 C CNN
-	1    7850 3550
+P 8100 2850
+F 0 "J?" H 7870 2839 50  0000 R CNN
+F 1 "USB_B_Micro" H 7870 2748 50  0000 R CNN
+F 2 "" H 8250 2800 50  0001 C CNN
+F 3 "~" H 8250 2800 50  0001 C CNN
+	1    8100 2850
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	6150 3050 7800 3050
+Wire Wire Line
+	6150 3150 7750 3150
+Wire Wire Line
+	7750 3150 7750 2950
+Wire Wire Line
+	7750 2950 7800 2950
+Wire Wire Line
+	7700 3250 7700 2850
+Wire Wire Line
+	7700 2850 7800 2850
+Wire Wire Line
+	6150 3250 7700 3250
+Wire Wire Line
+	7650 2950 7650 2650
+Wire Wire Line
+	7650 2650 7800 2650
+Wire Wire Line
+	6150 2950 7650 2950
+$Comp
+L power:VBUS #PWR?
+U 1 1 620605D0
+P 7650 2550
+F 0 "#PWR?" H 7650 2400 50  0001 C CNN
+F 1 "VBUS" H 7665 2723 50  0000 C CNN
+F 2 "" H 7650 2550 50  0001 C CNN
+F 3 "" H 7650 2550 50  0001 C CNN
+	1    7650 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2550 7650 2650
+Connection ~ 7650 2650
+$Comp
+L power:GND #PWR?
+U 1 1 62064E84
+P 8100 3400
+F 0 "#PWR?" H 8100 3150 50  0001 C CNN
+F 1 "GND" H 8105 3227 50  0001 C CNN
+F 2 "" H 8100 3400 50  0001 C CNN
+F 3 "" H 8100 3400 50  0001 C CNN
+	1    8100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3400 8100 3350
+Wire Wire Line
+	8200 3250 8200 3350
+Wire Wire Line
+	8200 3350 8100 3350
+Connection ~ 8100 3350
+Wire Wire Line
+	8100 3350 8100 3250
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 6206CBAD
+P 8150 3850
+F 0 "J?" H 8122 3824 50  0000 R CNN
+F 1 "Serial_Wire" H 8122 3733 50  0000 R CNN
+F 2 "" H 8150 3850 50  0001 C CNN
+F 3 "~" H 8150 3850 50  0001 C CNN
+	1    8150 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3350 7850 3350
+Wire Wire Line
+	7850 3350 7850 3750
+Wire Wire Line
+	7850 3750 7950 3750
+Wire Wire Line
+	6150 3450 7650 3450
+Wire Wire Line
+	7650 3450 7650 3950
+Wire Wire Line
+	7650 3950 7950 3950
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6207715A
+P 7500 3950
+F 0 "#PWR?" H 7500 3800 50  0001 C CNN
+F 1 "+3V3" H 7515 4123 50  0000 C CNN
+F 2 "" H 7500 3950 50  0001 C CNN
+F 3 "" H 7500 3950 50  0001 C CNN
+	1    7500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4050 7500 4050
+Wire Wire Line
+	7500 4050 7500 3950
+$Comp
+L power:GND #PWR?
+U 1 1 6208100C
+P 7800 3850
+F 0 "#PWR?" H 7800 3600 50  0001 C CNN
+F 1 "GND" H 7805 3677 50  0001 C CNN
+F 2 "" H 7800 3850 50  0001 C CNN
+F 3 "" H 7800 3850 50  0001 C CNN
+	1    7800 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 3850 7950 3850
+Text Notes 8000 4200 0    35   ~ 0
+This sequence is the same of STLink V2,\nwich helps with wiring
+$Comp
+L Connector:Conn_01x20_Male J?
+U 1 1 62094D55
+P 2550 5300
+F 0 "J?" H 2658 6381 50  0000 C CNN
+F 1 "Conn_01x20_Male" H 2658 6290 50  0000 C CNN
+F 2 "" H 2550 5300 50  0001 C CNN
+F 3 "~" H 2550 5300 50  0001 C CNN
+	1    2550 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x20_Male J?
+U 1 1 620964EC
+P 3350 5300
+F 0 "J?" H 3458 6381 50  0000 C CNN
+F 1 "Conn_01x20_Male" H 3458 6290 50  0000 C CNN
+F 2 "" H 3350 5300 50  0001 C CNN
+F 3 "~" H 3350 5300 50  0001 C CNN
+	1    3350 5300
+	1    0    0    -1  
+$EndComp
+Text Label 6150 4050 0    47   ~ 0
+PB3
+Text Label 6150 4150 0    47   ~ 0
+PB4
+Text Label 6150 4250 0    47   ~ 0
+PB5
+Text Label 6150 4350 0    47   ~ 0
+PB6
+Text Label 6150 4450 0    47   ~ 0
+PB7
+Text Label 6150 4550 0    47   ~ 0
+PB8
+Text Label 6150 4650 0    47   ~ 0
+PB9
+Text Label 3550 5400 0    47   ~ 0
+PB3
+Text Label 3550 5300 0    47   ~ 0
+PB4
+Text Label 3550 5200 0    47   ~ 0
+PB5
+Text Label 3550 5100 0    47   ~ 0
+PB6
+Text Label 3550 5000 0    47   ~ 0
+PB7
+Text Label 3550 4900 0    47   ~ 0
+PB8
+Text Label 3550 4800 0    47   ~ 0
+PB9
 $EndSCHEMATC
