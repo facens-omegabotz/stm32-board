@@ -608,9 +608,9 @@ Text Label 6500 3150 0    50   ~ 0
 USB_D-
 Text Label 6500 3250 0    50   ~ 0
 USB_D+
-Text Label 6150 3350 0    50   ~ 0
+Text Label 6500 3350 0    50   ~ 0
 SWDIO
-Text Label 6150 3450 0    50   ~ 0
+Text Label 6500 3450 0    50   ~ 0
 SWCLK
 Text Label 6500 2950 0    50   ~ 0
 VBUS
