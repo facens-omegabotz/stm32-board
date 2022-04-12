@@ -1,1 +1,1 @@
-# stm32-board
+# stm32f446-board → KiCad Project
