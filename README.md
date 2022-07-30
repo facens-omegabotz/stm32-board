@@ -5,3 +5,10 @@
 
 
 PCB design of a development board for the STM32f446 MCU
+
+
+## Schematics
+
+![image](https://user-images.githubusercontent.com/68878626/181864083-6cd9bf30-d76c-463e-91d6-0555e3139738.png)
+
+The PDF can be found [here](STM32-udemy.pdf)
